@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="tempCalc" onsubmit="CalculateTemp(); return false">
+        <label id="title-txt" for="temp">Please Enter the temperature.</label>
+        <br />
+        <input type="number" name="temp" id="temp">
+
+        <select name="temp-diff" id="temp-diff">
+            <option value="cel">*Celius</option>
+            <option value="fah">*Fahrenheit</option>
+        </select>
+        <br />
+        <input id="btn" type="submit" name="temp">
+        <br />
+        <hr/>
+        <span id="result-container"></span>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
